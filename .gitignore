@@ -1,0 +1,4 @@
+go.sum
+.idea
+go-admin*
+.DS_Store

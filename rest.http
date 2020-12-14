@@ -1,0 +1,23 @@
+### 新增用户
+POST http://localhost:8080/api/user
+Content-Type: application/json
+
+{
+  "username":"test",
+  "password":"test"
+}
+
+### 查看全部用户
+GET http://localhost:8080/api/user
+
+
+### 登录
+POST http://localhost:8080/login
+Content-Type: application/json
+
+{
+    "username":"admin",
+    "password":"admin"
+}
+
+###
