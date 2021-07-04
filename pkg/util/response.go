@@ -1,20 +1,21 @@
 package util
 
 import (
-	"github.com/gin-gonic/gin"
 	"net/http"
+
+	"github.com/gin-gonic/gin"
 )
 
 func Ok(c *gin.Context) {
 	c.JSON(http.StatusOK, gin.H{
-		"code": 1,
+		"code": 0,
 		"msg":  "success",
 	})
 }
 
 func OkData(c *gin.Context, data interface{}) {
 	c.JSON(http.StatusOK, gin.H{
-		"code": 1,
+		"code": 0,
 		"msg":  "success",
 		"data": data,
 	})
@@ -22,14 +23,14 @@ func OkData(c *gin.Context, data interface{}) {
 
 func Fail(c *gin.Context) {
 	c.JSON(http.StatusOK, gin.H{
-		"code": 0,
+		"code": 500,
 		"msg":  "fail",
 	})
 }
 
 func FailMsg(c *gin.Context, msg string) {
 	c.JSON(http.StatusOK, gin.H{
-		"code": 0,
+		"code": 500,
 		"msg":  msg,
 	})
 }

@@ -11,7 +11,7 @@ type Users []User
 type User struct {
 	Model
 	Username string `json:"username" form:"username"`
-	Password string `json:"password"`
+	Password string `json:"password" form:"password"`
 	Gender   int    `json:"gender" gorm:"default:3"`
 	CreateBy uint64 `json:"createBy"`
 	UpdateBy uint64 `json:"updateBy"`

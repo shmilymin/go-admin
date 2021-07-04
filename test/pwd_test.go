@@ -6,5 +6,5 @@ import (
 )
 
 func TestMD5(t *testing.T) {
-	t.Log(u.EncodeMD5("test"))
+	t.Log(u.EncodeMD5("admin"))
 }
